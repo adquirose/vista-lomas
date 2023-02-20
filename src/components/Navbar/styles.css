@@ -5,6 +5,7 @@
     grid-template: [top] 100% [bottom] / [izq] 1fr [col1] 2fr [col2] 1fr [der];
     align-items: center;
     padding: 0 55px;
+    background-color: black;
 }
 nav{
     height: 100%;
@@ -28,12 +29,13 @@ ul{
     padding-bottom: 3px;
     padding-right: 12px;
     padding-top: 3px;
-    color:var(--color-principal);
+    color:white;
     cursor: pointer;
+    font-size: 22px;
 }
 .li:hover{
     border-bottom: 1px solid transparent;
-    color:#506654
+    color:#edefed
 }
 button{
     border:0;

@@ -1,14 +1,16 @@
 import React from 'react';
 
-function ERemove({width, height}) {
+function ERemove({width, height, color}) {
 	return (
 		<svg height={height} width={width} viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-            <g fill="#212121" stroke="#212121" strokeLinecap="square" strokeLinejoin="miter" strokeMiterlimit="10" strokeWidth="2">
-                <line fill="none" stroke="#212121" x1="38" x2="10" y1="10" y2="38"/>
-                <line fill="none" stroke="#212121" x1="38" x2="10" y1="38" y2="10"/>
+            <g fill={color}>
+                <path d="M36.728,8.443l-12.728,12.729L11.272,8.443c-.391-.391-1.024-.391-1.414,0l-1.414,1.414c-.391,.391-.391,1.024,0,1.414l12.728,12.729-12.728,12.729c-.39,.391-.39,1.024,0,1.414l1.414,1.414c.391,.391,1.024,.391,1.414,0l12.728-12.729,12.728,12.729c.391,.391,1.024,.391,1.414,0l1.414-1.414c.391-.391,.391-1.024,0-1.414l-12.728-12.729,12.728-12.729c.39-.391,.39-1.024,0-1.414l-1.414-1.414c-.391-.391-1.024-.391-1.414,0Z" fill={color}/>
             </g>
         </svg>
 	);
 };
 
 export default ERemove;
+
+
+
