@@ -19,18 +19,18 @@ const NavMobile = () => {
         </button>:
         <div style={{width:'360px', height:'450px',backgroundColor:'rgba(0,0,100,0.25)', position:'absolute', top:'15px', right:'15px'}}>
           <button style={{position:'absolute', top:0, right:0, cursor:'pointer',background:'transparent'}} onClick={handleOnClick}><ERemove width={42} height={42}/></button>
-          <Nav display="d-block"/>
+          <Nav display="d-block" onClick={handleOnClick}/>
         </div>
       }
     </>
   )
 }
-const Nav = ({display}) => {
+const Nav = ({display, onClick}) => {
   return(
     <nav>
       <ul>
-        <Link to="/" className={`${display} li`}>Home</Link>
-        <Link to="/proyectos" className={`${display} li`}>Proyectos</Link>
+        <Link to="/" onClick={onClick} className={`${display} li`}>Home</Link>
+        <Link to="/proyectos" onClick={onClick} className={`${display} li`}>Proyectos</Link>
         <Link className={`${display} li`}>Products</Link>
         <Link className={`${display} li`}>Blog</Link>
         <Link className={`${display} li`}>Contact</Link>
