@@ -28,12 +28,13 @@ ul{
     padding-bottom: 3px;
     padding-right: 12px;
     padding-top: 3px;
-    color:var(--color-principal);
+    color:white;
     cursor: pointer;
+    font-size: 22px;
 }
 .li:hover{
     border-bottom: 1px solid transparent;
-    color:#506654
+    color:#edefed
 }
 button{
     border:0;
