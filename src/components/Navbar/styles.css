@@ -7,37 +7,51 @@
     padding: 0 55px;
     background-color: black;
 }
-nav{
+
+nav {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;  
 }
-ul{
+
+/*Logo*/
+img {
+    height: 100%;
+}
+
+
+ul {
     list-style-type:none;
     padding: 0;
 }
 .d-block{
     display: block;
 }
-.d-inline{
+
+.d-inline {
     display: inline;
 }
-.li{
+
+.li {
     padding-left: 12px;
     padding-bottom: 3px;
     padding-right: 12px;
     padding-top: 3px;
-    color:black;
+    color:rgb(255, 255, 255);
     cursor: pointer;
     font-size: 22px;
+    text-decoration: none;
+    font-family: var(--source-sans-pro-font);
 }
-.li:hover{
+
+.li:hover {
     border-bottom: 1px solid transparent;
-    color:#edefed
+    color:#545454
 }
-button{
+
+button {
     border:0;
     background-color: white;
     padding: 0 8px;
