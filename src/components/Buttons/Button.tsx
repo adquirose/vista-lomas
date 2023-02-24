@@ -1,5 +1,4 @@
-import React from 'react';
-import { FC, PropsWithChildren, useState } from 'react';
+import React, { FC, PropsWithChildren, useState } from 'react';
 import "../Buttons/styles.css";
 
 const Icon: FC<PropsWithChildren> = 
