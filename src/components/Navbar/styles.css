@@ -5,7 +5,6 @@
     grid-template: [top] 100% [bottom] / [izq] 1fr [col1] 2fr [col2] 1fr [der];
     align-items: center;
     padding: 0 55px;
-    background-color: black;
 }
 
 nav {

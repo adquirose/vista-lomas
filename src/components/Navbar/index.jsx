@@ -11,18 +11,34 @@ const NavMobile = () => {
     setIsVisible(!isVisible)
   }
   return(
-    <>
+    <Fragment>
       <img src={Logo} style={{width:'120px'}} alt="logo-vista"/>
       {!isVisible ? 
-        <button style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer'}} onClick={handleOnClick}>
-          <Menu8 width={42} height={42}/>
-        </button>:
-        <div style={{width:'100%', height:'100vh',backgroundColor:'rgba(0,0,0,0.65)', position:'absolute', top:'0', right:'0'}}>
-          <button style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer',background:'transparent'}} onClick={handleOnClick}><ERemove width={42} height={42} color="white"/></button>
+        <button 
+          style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer', height:'50px', background:'rgba(53,53,53,255)'}} 
+          onClick={handleOnClick}
+        >
+          <Menu8 width={42} height={42} color="white"/>
+        </button> :
+        <div 
+          style={{
+            width:'100%', 
+            height:'100vh',
+            backgroundColor:'rgba(0,0,0,0.65)',
+            position:'absolute',
+            top:'0', 
+            right:'0'
+          }}>
+          <button 
+            style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer',background:'transparent', height:'50px'}} 
+            onClick={handleOnClick}
+          >
+            <ERemove width={42} height={42} color="white"/>
+          </button>
           <Nav display="d-block" onClick={handleOnClick}/>
         </div>
       }
-    </>
+    </Fragment>
   )
 }
 const Nav = ({display, onClick}) => {
