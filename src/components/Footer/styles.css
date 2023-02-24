@@ -1,7 +1,12 @@
-footer{
+footer {
     background-color: black;
     height: 50px;
     position: sticky;
     color: white;
     font-family: var(--source-sans-pro-font);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+
+
