@@ -10,12 +10,11 @@ export default function App() {
   return (
     <div style={{display:'grid', gridTemplateRows:'170px minmax(calc(100vh - 340px), 1fr) 170px'}}>
       <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/proyectos" element={<Proyectos/>}/>
-          <Route path="/contacto" element={<Contacto/>}/> 
-        </Routes>
-      
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/proyectos" element={<Proyectos/>}/>
+        <Route path="/contacto" element={<Contacto/>}/> 
+      </Routes>
       <Footer/>
     </div>
   )

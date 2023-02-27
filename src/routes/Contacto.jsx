@@ -1,19 +1,15 @@
 import React from 'react'
 import Form from '../components/Form'
+import { Grid, Container } from '../global/styles'
 
-const styles = {
-  display:'grid',
-  gridTemplateColumns:'1fr 1fr',
-  left:0,
-  right:0,
-  margin:'0 auto',
-  alignContent:'center'
-}
 function Contacto() {
   return (
-    <div style={styles}>
-        <Form/>
-    </div>
+    <Container>
+      <Grid gridTemplateColumns='1fr 1fr' justifyContent="center" justifyItems="center" alignContent="center">
+          <Form/>
+          <p>TExto</p>
+      </Grid>
+    </Container>
   )
 }
 
