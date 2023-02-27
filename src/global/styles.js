@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { up, down, between, only, createTheme } from 'styled-breakpoints';
+import { down, createTheme } from 'styled-breakpoints';
+import { COLOR } from "../constants";
 
 const theme = createTheme({
     sm: '576px',
@@ -17,11 +18,11 @@ export const P = styled.p`
     margin-top:${ props => props.marginTop ? props.marginTop : 0};
     margin-bottom:${ props => props.marginBottom ? props.marginBottom : 0};
     font-weight:${ props => props.fontWeight ? props.fontWeight : '400'};
-    color:#bfc0c1;
+    color:${props => props.color ? props.color : COLOR};
     text-align:${ props => props.textAlign ? props.textAlign : 'center'};
 `
 export const H3 = styled.h3`
-    color:#bfc0c1;
+    color:${props => props.color ? props.color : COLOR};
     text-align:center;
     margin-top:50px;
     margin-bottom:50px;
@@ -35,7 +36,7 @@ export const Grid = styled.div`
     margin:${props => props.margin ? props.margin: '0'};
     width:100%;
     height:${props => props.height};
-    background-color:${props => props.backgroundColor ? props.backgroundColor : '#323232'};
+    z-index:10;
     align-self:${props => props.alignSelf ? props.alignSelf : 'center'}; 
     ${down('lg')}{
         grid-template-columns:${ props => props.gridTemplateColumnsLg };
@@ -55,7 +56,7 @@ export const Container = styled.div`
 `
 export const List = styled.ul`
     padding-left:10px;
-    color:#bfc0c1;
+    color:${props => props.color ? props.color : COLOR};
 `
 export const Item = styled.li`
     &:first-child{

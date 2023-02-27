@@ -5,6 +5,7 @@
     grid-template: [top] 100% [bottom] / [izq] 1fr [col1] 2fr [col2] 1fr [der];
     align-items: center;
     padding: 0 55px;
+    background-color: #323232;
 }
 
 nav {
@@ -12,7 +13,8 @@ nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    
 }
 
 /*Logo*/
@@ -34,6 +36,7 @@ ul {
 }
 
 .li {
+    position: relative;
     padding-left: 12px;
     padding-bottom: 3px;
     padding-right: 12px;
@@ -43,6 +46,7 @@ ul {
     font-size: 22px;
     text-decoration: none;
     font-family: var(--source-sans-pro-font);
+    z-index: 50; 
 }
 
 .li:hover {
@@ -54,4 +58,5 @@ button {
     border:0;
     background-color: white;
     padding: 0 8px;
+    
 }

@@ -15,7 +15,7 @@ const NavMobile = () => {
       <img src={Logo} style={{width:'120px'}} alt="logo-vista"/>
       {!isVisible ? 
         <button 
-          style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer', height:'50px', background:'rgba(53,53,53,255)'}} 
+          style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer', height:'50px', background:'rgba(53,53,53,1)'}} 
           onClick={handleOnClick}
         >
           <Menu8 width={42} height={42} color="white"/>
@@ -24,10 +24,11 @@ const NavMobile = () => {
           style={{
             width:'100%', 
             height:'100vh',
-            backgroundColor:'rgba(0,0,0,0.65)',
+            backgroundColor:'rgba(0,0,0,0.90)',
             position:'absolute',
             top:'0', 
-            right:'0'
+            right:'0',
+            zIndex:11
           }}>
           <button 
             style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer',background:'transparent', height:'50px'}} 

@@ -4,7 +4,7 @@ import Galeria from '../Galeria'
 
 function Barrio() {
   return ( 
-        <Grid gridTemplateColumns='2fr 1fr' gridTemplateColumnsLg="1fr">
+        <Grid gridTemplateColumns='2fr 360px' gridTemplateColumnsLg="1fr">
             <div style={{width:'100%', height:'fit-content',display:'grid', gap:'15px'}}>
                 <P textAlign="left" paddingLeft="35px" fontSize="35px" fontWeight="300">SECTOR CONSOLIDADO <br/>CON VIDA DE BARRIO</P>
                 <div style={{width:'100px', height:'8px', background:'gray', justifySelf:'start'}}/>
