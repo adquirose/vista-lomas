@@ -5,18 +5,6 @@ body
     justify-content: center;
 }
 
-/* .paloT {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.2s ease;
-    transform-origin: left;
-}
-      
-.paloT:hover {
-    transform: scaleX(2);
-} */
-
-
 .letraV {
   fill: #000000; /* color inicial */
   animation: cambio-de-color 1s infinite;
