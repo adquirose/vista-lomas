@@ -1,15 +1,15 @@
 import React from 'react'
-import './styles.css'
+import { Form as FormStyle, Input, Button } from '../../global/styles'
+
 function Form() {
   return (
-        <form style={{display:'grid', gridAutoFlow:'row'}}>
-            <input type="text" placeholder='Nombre'/>
-            <input type="email" placeholder='Email'/>
-            <input type="text" placeholder='Asunto' />
-            <input type="textarea" placeholder='Mensaje'/>
-            <button>Enviar</button>
-        </form>
-    
+    <FormStyle style={{display:'grid', gridAutoFlow:'row'}}>
+      <Input type="text" placeholder='Nombre'/>
+      <Input type="email" placeholder='Email'/>
+      <Input type="text" placeholder='Asunto' />
+      <Input type="textarea" placeholder='Mensaje'/>
+      <Button>Enviar</Button>
+    </FormStyle>
   )
 }
 
