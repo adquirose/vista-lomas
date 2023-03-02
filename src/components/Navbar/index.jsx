@@ -46,9 +46,8 @@ const Nav = ({display, onClick}) => {
   return(
     <nav>
       <ul>
-        <Link to="/" onClick={onClick} className={`${display} li`}>Home</Link>
-        <Link to="/proyectos" onClick={onClick} className={`${display} li`}>Proyectos</Link>
-        <Link className={`${display} li`}>Blog</Link>
+        <Link to="/" onClick={onClick} className={`${display} li`}>Proyecto</Link>
+        <Link to="/ayd" onClick={onClick} className={`${display} li`}>Arquitectura y Diseño</Link>
         <Link to="/contacto" onClick={onClick} className={`${display} li`}>Contacto</Link>  
       </ul>
     </nav>

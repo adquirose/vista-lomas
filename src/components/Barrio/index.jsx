@@ -1,13 +1,18 @@
 import React from 'react'
-import { P, Grid, List,Item } from '../../global/styles'
+import { P, Grid, List, Item, Container } from '../../global/styles'
 import Galeria from '../Galeria'
 
 function Barrio() {
   return ( 
+    <Container>
         <Grid gridTemplateColumns='2fr 360px' gridTemplateColumnsLg="1fr">
             <div style={{width:'100%', height:'fit-content',display:'grid', gap:'15px'}}>
-                <P textAlign="left" paddingLeft="35px" fontSize="35px" fontWeight="300">SECTOR CONSOLIDADO <br/>CON VIDA DE BARRIO</P>
-                <div style={{width:'100px', height:'8px', background:'gray', justifySelf:'start'}}/>
+                <div style={{display:'grid', width:'fit-content', position:'relative'}}>
+                    <P textAlign="left" fontSize="35px" fontWeight="300">
+                        SECTOR CONSOLIDADO <br/>CON VIDA DE BARRIO<br/>
+                    </P>
+                    <div style={{width:'85px', marginTop:'10px', height:'8px', background:'gray', position:'absolute', left:-30,bottom:-10,justifySelf:'start'}}/>
+                </div>
                 <Galeria/>
             </div>
             <Grid alignSelf="start" padding="0" gridTemplateColumnsLg="1fr 1fr 1fr" gridAutoFlowLg="column">
@@ -40,6 +45,7 @@ function Barrio() {
                 </List>
             </Grid>
         </Grid>
+    </Container>
   )
 }
 

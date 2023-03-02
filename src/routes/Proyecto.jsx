@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react'
 import Logo from '../assets/logo.png'
 import Barrio from '../components/Barrio'
+import Full from '../components/Full'
 import { PinDelete } from '../Icons'
 import Bg from '../components/Bg'
 import { P, H3, Container, Grid } from '../global/styles'
 
-function Home() {
+function Proyecto() {
     return (
         <div>
             <Bg width='100%' height='100%'>
@@ -28,11 +29,9 @@ function Home() {
                     </Grid>
             </Container>
             </Bg>
-            <Container>
-                <Barrio/>
-            </Container>
+            <Barrio/>
+            <Full/>
         </div>        
     )
 }
-
-export default Home
+export default Proyecto
