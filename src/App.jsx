@@ -8,14 +8,16 @@ import { Routes, Route } from 'react-router-dom'
 
 export default function App() {
   return (
-    <div style={{display:'grid', gridTemplateRows:'170px minmax(calc(100vh - 340px), 1fr) 170px'}}>
+    <div>
       <Navbar/>
-      <Routes>
-        <Route path="/" element={<Proyecto/>}/>
-        <Route path="/ayd" element={<AyD/>}/>
-        <Route path="/contacto" element={<Contacto/>}/> 
-      </Routes>
-      <Footer/>
+      <div style={{display:'grid', gridTemplateRows:'minmax(calc(100vh - 170px), 1fr) 170px'}}>
+        <Routes>
+          <Route path="/" element={<Proyecto/>}/>
+          <Route path="/ayd" element={<AyD/>}/>
+          <Route path="/contacto" element={<Contacto/>}/> 
+        </Routes>
+        <Footer/>
+      </div>
     </div>
   )
 }

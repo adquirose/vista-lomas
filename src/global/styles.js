@@ -24,12 +24,10 @@ export const P = styled.p`
     text-align:${ props => props.textAlign ? props.textAlign : 'center'};
     width:fit-content;
     height:fit-content;
-<<<<<<< HEAD
     ${down('sm')}{
-        width:100%;
+        margin-right:${ props => props.marginRightSm ? props.marginRightSm : 0};
+        margin-left:${ props => props.marginLeftSm ? props.marginLeftSm : 0};
     }
-=======
->>>>>>> cc0e9914691b65ab8b40016435aca1ae426fc5d1
 `
 export const H3 = styled.h3`
     color:${props => props.color ? props.color : COLOR};

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Logo from '../assets/logo.png'
 import Barrio from '../components/Barrio'
 import Full from '../components/Full'
@@ -14,7 +14,7 @@ function Proyecto() {
                     <Grid gridTemplateColumns="1fr" >
                         <img style={{width:'80px', left:0, right:0, margin:'0 auto'}} src={Logo} alt="logo" />
                         <H3 color='white'><PinDelete width={24} height={24} color={'red'}/>LOS LITRES Nº 1800, LA DEHESA</H3>
-                        <P fontSize="16px" marginLeft='100px' marginRight='100px' color='white'>
+                        <P fontSize="16px" marginLeft='100px' marginLeftSm='10px' marginRight='100px' marginRightSm='10px' color='white'>
                             Vista Lomas un proyecto exclusivo inserto en un entorno natural con vistas panoramicas
                             al valle de los trapenses, cerro Manquehue, lomajes precordilleranos.<br/><br/>
                             Solo 12 casas mediterráneas 250 m2 aproximados en terrenos de 652 m2 que combinan diseño elegancia 
@@ -27,7 +27,7 @@ function Proyecto() {
                             por todo el valle.
                         </P>
                     </Grid>
-            </Container>
+                </Container>
             </Bg>
             <Barrio/>
             <Full/>

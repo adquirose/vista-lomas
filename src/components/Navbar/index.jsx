@@ -1,7 +1,6 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu8, ERemove } from '../../Icons'
-import { useCurrentWidth } from '../../hooks'
 import Logo from '../../assets/logo.png'
 import './styles.css'
 
@@ -11,11 +10,10 @@ const NavMobile = () => {
     setIsVisible(!isVisible)
   }
   return(
-    <Fragment>
-      <img src={Logo} style={{width:'120px'}} alt="logo-vista"/>
+    <div>
       {!isVisible ? 
         <button 
-          style={{position:'absolute', top:'15px', right:'15px', cursor:'pointer', height:'50px', background:'rgba(53,53,53,1)'}} 
+          style={{position:'absolute', zIndex:11,top:'15px', right:'15px', cursor:'pointer', height:'55px', width:'55px',background:'rgba(53,53,53,1)', justifySelf:'end', display:'grid', justifyContent:'center', alignContent:'center'}} 
           onClick={handleOnClick}
         >
           <Menu8 width={42} height={42} color="white"/>
@@ -39,7 +37,7 @@ const NavMobile = () => {
           <Nav display="d-block" onClick={handleOnClick}/>
         </div>
       }
-    </Fragment>
+    </div>
   )
 }
 const Nav = ({display, onClick}) => {
@@ -53,27 +51,11 @@ const Nav = ({display, onClick}) => {
     </nav>
   )
 }
-function Navbar() {
-  let width = useCurrentWidth()
-  
-  const mostrarNav = () => {
-    if(width < 768){
-      return(
-        <NavMobile/>
-      )
-    }else{
-      return(
-        <div className='navbar-container'>
-          <img src={Logo} style={{width:'120px'}} alt="logo-extracto-color"/>
-          <Nav display="d-inline"/>
-        </div>)
-    }
-  }
-  return (
-    <Fragment>
-      { mostrarNav()}
-    </Fragment>
 
+function Navbar() {
+
+  return (
+    <NavMobile/>
   )
 }
 
