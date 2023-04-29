@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'reactstrap'
 import LogoTavacorp from '../../assets/images/tavacorp-logo.png'
+import LogoVistaLomas from '../../assets/images/logo.png';
 
 function Footer() {
   return (
@@ -15,7 +16,8 @@ function Footer() {
                     </div>
                 </Col>
                 <Col className='position-relative'>
-                    <img src={LogoTavacorp} style={{width:'125px', position:'absolute', right:'20px'}} alt="logo-tavacorp"/>
+                    <img src={LogoTavacorp} className='footer-tavacorp' alt="logo-tavacorp"/>
+                    <img src={LogoVistaLomas} className='footer-vista-lomas' alt="logo-vistalomas"/>
                 </Col>
             </Row>
         </Container>

@@ -1,14 +1,41 @@
-import { useState } from 'react';
-import { Container, Row, Col, Modal, ModalHeader, ModalBody } from 'reactstrap';
-import Planta1 from '../../assets/images/planta1.jpg';
-import Planta2 from '../../assets/images/planta2.jpg';
 
+import { Container, Row, Col } from 'reactstrap';
+import { Gallery, Item } from 'react-photoswipe-gallery';
+import 'photoswipe/dist/photoswipe.css';
+
+const MyGallery = () => (
+    <Gallery>
+      <div className='gallery-container'>
+      <Item
+        original="./src/assets/images/cotiza/1.jpg"
+        thumbnail="./src/assets/images/cotiza/thumb/1.jpg"
+        width="4000"
+        height="3692"
+      >
+        {({ ref, open }) => (
+            <div>
+                <img className="image-gallery" ref={ref} onClick={open} src="./src/assets/images/cotiza/thumb/1.jpg" />
+                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
+            </div>
+        )}
+      </Item>
+      <Item
+        original="./src/assets/images/cotiza/2.jpg"
+        thumbnail="./src/assets/images/cotiza/thumb/2.jpg"
+        width="4000"
+        height="2995"
+      >
+        {({ ref, open }) => (
+            <div>
+                <img className="image-gallery" ref={ref} onClick={open} src="./src/assets/images/cotiza/thumb/2.jpg" />
+                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
+            </div>
+        )}
+      </Item>
+      </div>
+    </Gallery>
+  )
 function Cotiza() {
-    const [modal1, setModal1] = useState(false);
-    const [modal2, setModal2] = useState(false);
-
-    const toggle1 = () => setModal1(!modal1);
-    const toggle2 = () => setModal2(!modal2);
     return (
         <div id="cotiza" className='section'>
             <Container>
@@ -19,50 +46,9 @@ function Cotiza() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className='d-flex flex-column align-items-center justify-content-center'>
-                        <div className='image-container' onClick={toggle1}>
-                            <img src={Planta1} alt="img-planta1"/>
-                        </div>
-                        <div className='pt-3'>
-                            <button className='button'>COTIZAR</button>
-                        </div>
-                        
-                    </Col>
-                    <Col className='d-flex flex-column align-items-center justify-content-center'>
-                        <div className='image-container' onClick={toggle2}>
-                            <img src={Planta2} alt="img-planta2"/>
-                        </div>
-                        
-                        <div className='pt-3'>
-                            <button className='button'>COTIZAR</button>
-                        </div>
-                    </Col>
+                    <MyGallery/>
                 </Row>
             </Container>
-            <Modal isOpen={modal1} toggle={toggle1} >
-                            <ModalHeader className='color-black' toggle={toggle1}>Planta 1</ModalHeader>
-                            <ModalBody className='color-black'>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                        </Modal>
-                        <Modal isOpen={modal2} toggle={toggle2} >
-                            <ModalHeader className='color-black' toggle={toggle2}>Planta 2</ModalHeader>
-                            <ModalBody className='color-black'>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                culpa qui officia deserunt mollit anim id est laborum.
-                            </ModalBody>
-                        </Modal>
         </div>
     )
 }

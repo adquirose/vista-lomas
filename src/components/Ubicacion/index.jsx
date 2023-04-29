@@ -3,7 +3,7 @@ import Mapa from '../../assets/images/mapa.png'
 
 function Ubicacion() {
     const handleOnClick = () => {
-        window.open('https://goo.gl/maps/1pT7BaG2G7gkqVCeA','_blank')
+        window.open('https://goo.gl/maps/1tSVSfbJZAGpByd57','_blank')
     }
   return (
     <div id="ubicacion" className='section'>

@@ -26,7 +26,7 @@ function BarrioEntorno() {
               <img src={Img6} style={{height:'auto'}} alt="img6"/>
             </div>
           </Col>
-          <Col lg="4" md="12" sm="12" className='pt-4'>
+          <Col lg="4" md="12" sm="12" className='d-flex flex-column justify-content-end pt-4 pt-md-0'>
             <div>
               <div className='pb-2'>
                 <Hat3/><span className='ps-2'>COLEGIOS</span>

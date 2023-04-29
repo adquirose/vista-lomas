@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Container, Row } from 'reactstrap';
 import { ERemove, Menu8 } from '../Icons';
 import Logo from '../../assets/images/logo.png'
+import LogoTavacorp from '../../assets/images/tavacorp-logo.png'
 
 function Navigator() {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,6 @@ function Navigator() {
                         <li><a onClick={toggle} href="#emplazamiento">Emplazamiento</a></li>
                         <li><a onClick={toggle} href="#cotiza">Plantas</a></li>
                         <li><a onClick={toggle} href="#las-casas">Las Casas</a></li>
-                        <li><a onClick={toggle} href="#avance-obra">Avance de obra</a></li>
                         <li><a onClick={toggle} href="#barrio-entorno">Barrio y entorno</a></li>
                         <li><a onClick={toggle} href="#masterplan360">Nube 360</a></li>
                         <li><a onClick={toggle} href="#ubicacion">Ubicación</a></li>
@@ -54,8 +54,10 @@ function Navigator() {
         <div id="navigator">
             <Container className='fixed-top pt-5'>
                 <Row className='d-flex justify-content-between flex-row px-5'>
-                    <div style={{width:'90px'}}>
-                        { logoVisible && <img src={Logo} style={{width:'100%'}} alt="img-logo" />}
+                    <div style={{width:'200px'}}>
+                        { logoVisible && <div style={{display:'flex', flexDirection:'row', width:'100%'}}>
+                            <img src={Logo} className='logo-vista-lomas' alt="img-logo" /> 
+                            <img src={LogoTavacorp} className='logo-tavacorp' alt="img-logo-tavacorp" /></div>}
                     </div>
                     <div style={{width:'50px', padding:0}}>
                         { !isOpen && 
