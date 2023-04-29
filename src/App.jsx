@@ -5,7 +5,6 @@ import Proyecto from "./components/Proyecto"
 import Cotiza from "./components/Cotiza"
 import RenderInterior from "./components/RenderInterior"
 import LasCasas from "./components/LasCasas"
-import AvancesObra from "./components/AvancesObra"
 import BarrioEntorno from "./components/BarrioEntorno"
 import Masterplan360 from "./components/Masterplan360"
 import LifeStyle from "./components/LifeStyle"
@@ -25,7 +24,6 @@ function App() {
         <Cotiza/>
         <RenderInterior/>
         <LasCasas/>
-        <AvancesObra/>
         <BarrioEntorno/>
         <Masterplan360/>
         <LifeStyle/>
