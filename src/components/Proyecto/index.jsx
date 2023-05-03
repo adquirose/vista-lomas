@@ -8,7 +8,14 @@ function ElCondominio(){
             <Container>
                 <Row>
                     <Col sm="12" md="6">
-                        <img src={ImgCondominio} className="image-proyecto" alt="img-condominio"/>
+                        <div className='image-proyecto-container'>
+                            <div style={{position:'absolute', zIndex:6, top:'20px', left:'20px'}}>
+                                <h4 className='ps-3 mb-0'>+ Amplitud</h4>
+                                <div className='subraya'/>
+                            </div>
+                            <img src={ImgCondominio} className="image-proyecto" alt="img-condominio"/>
+                        </div>
+                        
                     </Col>
                     <Col sm="12" md="6" className='pt-3 pt-md-0'>
                         <div className='pt-sm-4 pt-0'>
@@ -59,7 +66,14 @@ function ElProyecto() {
                     </p>
                 </Col>
                 <Col sm="12" md="6" className='d-none d-md-block'>
-                    <img src={ImgProyecto} className="image-proyecto" alt="img-proyecto"/>
+                    <div className='image-proyecto-container'>
+                        <div style={{position:'absolute', zIndex:6, top:'20px', left:'20px'}}>
+                            <h4 className='ps-3 mb-0'>+ Arquitectura</h4>
+                            <div className='subraya'/>
+                        </div>
+                        <img src={ImgProyecto} className="image-proyecto" alt="img-proyecto"/>
+
+                    </div>
                 </Col>
             </Row>
         </Container>

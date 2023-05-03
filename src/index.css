@@ -30,7 +30,8 @@ body {
   width:70px;
 }
 .logo-tavacorp{
-  height:70px;
+  height:55px;
+  padding-left: 5px;
 }
 .section{
   padding-top: 60px;
@@ -58,7 +59,22 @@ body {
 #proyecto-container .image-proyecto{
   width: 100%;
   max-width: 520px;
-  margin-top: 65px;
+  position: absolute;
+
+}
+#proyecto-container .image-proyecto-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#proyecto-container .image-proyecto-container h4{
+  color:var(--color-primary);
+  font-weight: 300;
+}
+#proyecto-container .image-proyecto-container .subraya{
+  background-color: var(--color-primary);
+  width: 55px;
+  height: 7px;
 }
 #emplazamiento .image-container{
   background-color: var(--color-white);
@@ -68,7 +84,6 @@ body {
 #emplazamiento .image-emplazamiento{
   width: 100%;
   max-width: 900px;
-  margin-top: 65px;
 }
 #emplazamiento h2{
   margin-left: 35px;
@@ -207,6 +222,11 @@ body {
   right:175px;
 }
 @media (max-width: 420px) {
+  #proyecto-container .image-proyecto-container{
+    position: relative;
+    width: 100%;
+    height: 240px;
+  }
   .logo-vista-lomas{
     width:50px;
   }

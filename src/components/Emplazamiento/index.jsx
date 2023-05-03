@@ -1,5 +1,5 @@
 import { Container, Row } from 'reactstrap';
-import ImgEmplazamiento from '../../assets/images/emplazamiento.png';
+import ImgEmplazamiento from '../../assets/images/emplazamiento/emplazamiento.jpg';
 
 function Emplazamiento() {
   return (

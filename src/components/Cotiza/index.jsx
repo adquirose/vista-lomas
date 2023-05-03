@@ -9,8 +9,8 @@ const MyGallery = () => (
       <Item
         original="./src/assets/images/cotiza/1.jpg"
         thumbnail="./src/assets/images/cotiza/thumb/1.jpg"
-        width="4000"
-        height="3692"
+        width="3170"
+        height="2260"
       >
         {({ ref, open }) => (
             <div>
@@ -22,8 +22,8 @@ const MyGallery = () => (
       <Item
         original="./src/assets/images/cotiza/2.jpg"
         thumbnail="./src/assets/images/cotiza/thumb/2.jpg"
-        width="4000"
-        height="2995"
+        width="3307"
+        height="2362"
       >
         {({ ref, open }) => (
             <div>
