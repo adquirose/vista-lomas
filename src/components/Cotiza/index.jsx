@@ -7,27 +7,27 @@ const MyGallery = () => (
     <Gallery>
       <div className='gallery-container'>
       <Item
-        original="./src/assets/images/cotiza/1.jpg"
-        thumbnail="./src/assets/images/cotiza/thumb/1.jpg"
+        original="https://www.lanube360.com/temp-vista-lomas/images/cotiza/1.jpg"
+        thumbnail="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/1.jpg"
         width="3170"
         height="2260"
       >
         {({ ref, open }) => (
             <div>
-                <img className="image-gallery" ref={ref} onClick={open} src="./src/assets/images/cotiza/thumb/1.jpg" />
+                <img className="image-gallery" ref={ref} onClick={open} src="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/1.jpg" />
                 <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
             </div>
         )}
       </Item>
       <Item
-        original="./src/assets/images/cotiza/2.jpg"
-        thumbnail="./src/assets/images/cotiza/thumb/2.jpg"
+        original="https://www.lanube360.com/temp-vista-lomas/images/cotiza/2.jpg"
+        thumbnail="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/2.jpg"
         width="3307"
         height="2362"
       >
         {({ ref, open }) => (
             <div>
-                <img className="image-gallery" ref={ref} onClick={open} src="./src/assets/images/cotiza/thumb/2.jpg" />
+                <img className="image-gallery" ref={ref} onClick={open} src="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/2.jpg" />
                 <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
             </div>
         )}
