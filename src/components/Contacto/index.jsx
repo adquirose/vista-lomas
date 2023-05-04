@@ -5,15 +5,15 @@ function Formulario(){
     <Form>
       <FormGroup>
         <Label>Nombre</Label>
-        <Input />
+        <Input placeholder="Tu Nombre"/>
       </FormGroup>
       <FormGroup>
         <Label>Email</Label>
-        <Input />
+        <Input placeholder="Tu Email"/>
       </FormGroup>
       <FormGroup>
         <Label>Mensaje</Label>
-        <Input />
+        <Input placeholder="Tu Mensaje"/>
       </FormGroup>
       <Button>Enviar</Button>
     </Form>

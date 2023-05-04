@@ -18,7 +18,7 @@ function ElCondominio(){
                         
                     </Col>
                     <Col sm="12" md="6" className='pt-3 pt-md-0'>
-                        <div className='pt-sm-4 pt-0'>
+                        <div className='pt-4 pt-sm-0'>
                             <h2>EL CONDOMINIO</h2>
                             <div className='subraya bg-white'/>
                         </div>
