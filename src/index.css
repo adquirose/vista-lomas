@@ -3,6 +3,7 @@
   --color-ws: #71a83c;
   --color-white:#FFFFFF;
   --color-black:#000000;
+  --color-danger:rgb(5, 146, 127);
 }
 body {
   margin: 0;
@@ -93,14 +94,14 @@ body {
   margin-left: 35px;
 }
 .button{
-  background-color: var(--color-white);
+  background-color: var(--color-danger) !important;
   border-radius: 3px;
   border:0;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.35rem;
   padding-bottom: 0.35rem;
-  color:var(--color-black);
+  color:var(--color-white) !important;
   font-weight: 600;
   font-size: 12px;
 }
@@ -169,16 +170,20 @@ body {
 }
 #contacto h3{
   font-size: 1.35rem;
+  color: var(--color-primary);
 }
 #contacto p, a{
-  color:var(--color-white);
+  color:var(--color-primary);
   font-size: 1rem;
   display:block;
   margin-bottom: 5px;
 }
 #contacto a:hover{
   text-decoration: none;
-  color:var(--color-white);
+  color:var(--color-black);
+}
+#contacto form label{
+  color:var(--color-primary);
 }
 #navigator ul li {
   color:var(--color-black);

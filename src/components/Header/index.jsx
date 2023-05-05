@@ -28,9 +28,7 @@ function Header() {
                 <Row>
                   <p style={{fontWeight:500}}>
                     CONDOMINIO VISTA LOMAS<br/>
-                    PROGRAMA<br/>
                     LOS LITRES No 1800, LA DEHESA <br/>
-                    VENTA EN VERDE
                   </p>
                 </Row>  
               </Container>

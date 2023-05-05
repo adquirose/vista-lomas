@@ -4,4 +4,6 @@ import ShoppingBag from "./ShoppingBag";
 import Menu8 from "./Menu8";
 import LogoWhatsapp from "./LogoWhatsapp";
 import ERemove from "./ERemove";
-export { Hat3, Hospital32, ShoppingBag, Menu8, LogoWhatsapp, ERemove}
+import Email from "./Email";
+import PhoneCall from "./PhoneCall";
+export { Hat3, Hospital32, ShoppingBag, Menu8, LogoWhatsapp, ERemove, Email, PhoneCall}

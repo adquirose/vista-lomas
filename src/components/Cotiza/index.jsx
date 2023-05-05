@@ -15,7 +15,7 @@ const MyGallery = () => (
         {({ ref, open }) => (
             <div>
                 <img className="image-gallery" ref={ref} onClick={open} src="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/1.jpg" />
-                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
+                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA MODELO A</button></div>
             </div>
         )}
       </Item>
@@ -28,7 +28,7 @@ const MyGallery = () => (
         {({ ref, open }) => (
             <div>
                 <img className="image-gallery" ref={ref} onClick={open} src="https://www.lanube360.com/temp-vista-lomas/images/cotiza/thumb/2.jpg" />
-                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA</button></div>
+                <div className='d-flex justify-content-center pt-3'><button className='button'>COTIZA MODELO A1</button></div>
             </div>
         )}
       </Item>
