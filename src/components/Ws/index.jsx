@@ -2,7 +2,7 @@ import { LogoWhatsapp } from "../Icons"
 function Ws() {
   return (
     <div
-        onClick={ () => {window.open('https://api.whatsapp.com/send/?phone=56966780540')}}
+        onClick={ () => {window.open('https://api.whatsapp.com/send/?phone=56927022045')}}
         style={{
             position:'fixed', 
             width:'50px', 

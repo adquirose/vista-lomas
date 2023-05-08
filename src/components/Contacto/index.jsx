@@ -41,9 +41,9 @@ function Contacto() {
                   </div>
                   <div className="pt-4 ps-3">
                     <h3>Información de Ventas</h3>
-                    <div className="d-flex pb-3 pt-4"><PhoneCall/><a className="ps-3" href="tel:+56966780540">+56 9 6678 0540</a></div>
+                    <div className="d-flex pb-3 pt-4"><PhoneCall/><a className="ps-3" href="tel:+56927022045">+56 9 2702 2045</a></div>
                     <div className="d-flex pb-3"><Email/> <a className="ps-3" href="mailto:vistalomas@tavacorp.cl">vistalomas@tavacorp.cl</a></div>
-                    <div className="d-flex pb-3" onClick={ handleOnClick }><LogoWhatsapp width={36} height={36}/><a className="ps-3" href="">+56 9 6678 0540</a></div>
+                    <div className="d-flex pb-3" onClick={ handleOnClick }><LogoWhatsapp width={36} height={36}/><a className="ps-3" href="https://api.whatsapp.com/send/?phone=56927022045">+56 9 2702 2045</a></div>
                   </div>
                 </Col>
                 <Col sm="12" md="6" className="pt-3 pt-md-0">
