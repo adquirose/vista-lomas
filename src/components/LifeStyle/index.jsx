@@ -22,11 +22,10 @@ function LifeStyle() {
                             delay: 2500,
                             disableOnInteraction: false,
                         }}
+                        loop={true}
                         navigation={true}
                         modules={[Navigation, Autoplay]}
                         spaceBetween={15}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                         breakpoints={{
                             // when window width is >= 640px
                             640: {

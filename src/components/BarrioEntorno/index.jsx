@@ -50,7 +50,7 @@ function BarrioEntorno() {
               <List>
                 <li>Meds</li>
                 <li>Alemana</li>
-                <li>SANTA MARÍA</li>
+                <li>Santa María</li>
               </List>
             </div>
             <div>

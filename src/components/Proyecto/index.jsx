@@ -9,7 +9,7 @@ function ElCondominio(){
                 <Row>
                     <Col sm="12" md="6">
                         <div className='image-proyecto-container'>
-                            <div style={{position:'absolute', zIndex:6, top:'20px', left:'20px'}}>
+                            <div style={{position:'absolute', zIndex:6, top:'20px', left:'0'}}>
                                 <h4 className='ps-3 mb-0'>+ Amplitud</h4>
                                 <div className='subraya'/>
                             </div>
@@ -55,8 +55,8 @@ function ElProyecto() {
                     <p>
                         Vista Lomas un proyecto exclusivo inserto en un entorno natural con vistas 
                         panorámicas al Valle de Los Trapenses y cerro Manquehue.<br/>
-                        Sólo 12 casas mediterráneas de 322 m2 totales construidos en terrenos de hasta 
-                        764 m2 que combinan diseño, elegancia y entorno.<br/>
+                        Sólo 12 casas mediterráneas de 322 m2 totales construidos, en terrenos de hasta 
+                        764 m2, que combinan diseño, elegancia y entorno.<br/>
                         Vista Lomas es un condominio donde podrás disfrutar de la tranquilidad 
                         y ausencia de ruido del sector.<br/>
                         Con una distribución moderna y gran diseño arquitectónico, 
@@ -67,7 +67,7 @@ function ElProyecto() {
                 </Col>
                 <Col sm="12" md="6" className='d-none d-md-block'>
                     <div className='image-proyecto-container'>
-                        <div style={{position:'absolute', zIndex:6, top:'20px', left:'20px'}}>
+                        <div style={{position:'absolute', zIndex:6, top:'20px', left:'0'}}>
                             <h4 className='ps-3 mb-0'>+ Arquitectura</h4>
                             <div className='subraya'/>
                         </div>
@@ -86,7 +86,7 @@ function Proyecto(){
             <ElProyecto/>
             <ElCondominio/>
             <div className='d-flex justify-content-center mt-4'>
-                <button className='button'>VER BROCHURE DIGITAL</button>
+                <button onClick={()=> window.open('../../assets/brochure.pdf','_blank')} className='button'>VER BROCHURE DIGITAL</button>
             </div>
         </div>
     )

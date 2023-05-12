@@ -23,12 +23,12 @@ function Header() {
               <SwiperSlide><img src={HeaderImg2} alt="ext2"/></SwiperSlide>
               <SwiperSlide><img src={HeaderImg3} alt="ext3"/></SwiperSlide>
             </Swiper>
-            <div style={{ position:'absolute', bottom:'30px', left:'30px',maxWidth:'300px', width:'100%', height:'120px', zIndex:15}}>
+            <div style={{ position:'absolute', bottom:'30px', left:'30px',maxWidth:'320px', width:'100%', height:'120px', zIndex:15}}>
               <Container>
                 <Row>
                   <p style={{fontWeight:500}}>
                     CONDOMINIO VISTA LOMAS<br/>
-                    LOS LITRES No 1800, LA DEHESA <br/>
+                    AV. LOS LITRES No 1800, LA DEHESA <br/>
                   </p>
                 </Row>  
               </Container>

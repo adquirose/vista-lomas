@@ -56,7 +56,9 @@ function Navigator() {
                 <Row className='d-flex justify-content-between flex-row px-5'>
                     <div style={{width:'200px'}}>
                         { logoVisible && <div style={{display:'flex', flexDirection:'row', width:'100%'}}>
-                            <img src={Logo} className='logo-vista-lomas' alt="img-logo" /> 
+                            <div style={{width:'contain', border:'1px solid white'}}>
+                                <img src={Logo} className='logo-vista-lomas' alt="img-logo" />
+                            </div> 
                             <img src={LogoTavacorp} className='logo-tavacorp' alt="img-logo-tavacorp" /></div>}
                     </div>
                     <div style={{width:'50px', padding:0}}>

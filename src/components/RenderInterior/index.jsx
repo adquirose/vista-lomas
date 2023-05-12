@@ -5,7 +5,8 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import DpImage from '../../assets/images/render-interior/dormitorio-principal.jpg';
 import SeImage from '../../assets/images/render-interior/sala-estar.jpg';
-import LcImage from '../../assets/images/render-interior/living-comedor.jpg';
+import LivingImage from '../../assets/images/render-interior/living.jpg';
+import ComedorImage from '../../assets/images/render-interior/comedor.jpg';
 import D1Image from '../../assets/images/render-interior/dormitorio1.jpg';
 import VCImage from '../../assets/images/render-interior/vista-conjunto.jpg';
 import LE1Image from '../../assets/images/render-interior/lomas-exterior1.jpg';
@@ -23,11 +24,10 @@ function RenderInterior() {
                             delay: 2500,
                             disableOnInteraction: false,
                         }}
+                        loop={true}
                         navigation={true}
                         modules={[Navigation, Autoplay]}
                         spaceBetween={15}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
                         breakpoints={{
                             // when window width is >= 490px
                             490: {
@@ -54,8 +54,14 @@ function RenderInterior() {
                             </div></SwiperSlide>
                         <SwiperSlide>
                             <div style={{position:'relative', height:'220px'}}>
-                                <img style={{position:'absolute', width:'100%', height:'100%'}} src={LcImage} alt="lc-image"/>
-                                <h3 style={{ paddingTop:'5px',paddingBottom:'5px', width:'100%',position:'absolute', bottom:0, textAlign:'center', marginBottom:0, backgroundColor:'rgba(0,0,0,0.35)', fontSize:'16px'}}>LIVING COMEDOR</h3>
+                                <img style={{position:'absolute', width:'100%', height:'100%'}} src={LivingImage} alt="lc-image"/>
+                                <h3 style={{ paddingTop:'5px',paddingBottom:'5px', width:'100%',position:'absolute', bottom:0, textAlign:'center', marginBottom:0, backgroundColor:'rgba(0,0,0,0.35)', fontSize:'16px'}}>LIVING</h3>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div style={{position:'relative', height:'220px'}}>
+                                <img style={{position:'absolute', width:'100%', height:'100%'}} src={ComedorImage} alt="lc-image"/>
+                                <h3 style={{ paddingTop:'5px',paddingBottom:'5px', width:'100%',position:'absolute', bottom:0, textAlign:'center', marginBottom:0, backgroundColor:'rgba(0,0,0,0.35)', fontSize:'16px'}}>COMEDOR</h3>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>

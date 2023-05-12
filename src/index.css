@@ -57,11 +57,17 @@ body {
   /* padding-left: 28px;
   padding-right: 21px; */
 }
+#proyecto-container button:active{
+  border:none;
+}
+#proyecto-container button:focus-visible{
+  border:none !important;
+  outline: none;
+}
 #proyecto-container .image-proyecto{
   width: 100%;
   max-width: 520px;
   position: absolute;
-
 }
 #proyecto-container .image-proyecto-container{
   position: relative;
@@ -81,6 +87,7 @@ body {
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 #emplazamiento .image-emplazamiento{
   width: 100%;
@@ -104,6 +111,12 @@ body {
   color:var(--color-white) !important;
   font-weight: 600;
   font-size: 12px;
+}
+.button:active{
+  border:none;
+}
+.button:focus{
+  border:none;
 }
 #las-casas h2{
   margin-left: 35px;
@@ -143,7 +156,7 @@ body {
 }
 .header-container{
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%;
   min-width: 320px;
   height: 470px;
   min-height: 360px;

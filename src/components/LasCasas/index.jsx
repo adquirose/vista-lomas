@@ -18,7 +18,7 @@ function LasCasas() {
                         <li>Living comedor y cocina integrables.</li>
                         <li>Terraza con vistas increíbles y conexión al jardín</li>
                         <li>Baño de visitas.</li>
-                        <li>Dormitorio principal en suite con walk in closet y closet para ropa Blanca. Gran Patio de Luz conectado a Sala de Estar.</li>
+                        <li>Dormitorio principal en suite con walk in closet y closet para ropa blanca. Gran Patio de Luz conectado a Sala de Estar.</li>
                         <li>Sector para estudiar o home office.</li>
                         <li>3 dormitorios iguales.</li>
                         <li>Closet de ropa blanca.</li>
