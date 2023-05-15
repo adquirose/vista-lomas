@@ -11,7 +11,7 @@ function Footer() {
                     <div style={{paddingLeft:'25px'}}>
                         <h6>Avenida La Dehesa 1201, oficina 709, Edificio Oriente. Santiago.</h6> 
                         <h6>vistalomas@tavacorp.cl</h6>
-                        <h6>+569 6678 0540</h6>
+                        <h6>+56 9 2702 2045</h6>
                         <h5>VISTALOMAS.CL</h5>
                     </div>
                 </Col>
